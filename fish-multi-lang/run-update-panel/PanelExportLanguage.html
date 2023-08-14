@@ -1,0 +1,31 @@
+<div class="container">
+    <div class="layout horizontal center-justified">
+        <h3>Nhập Game ID muốn cập nhật Multi Language</h3>
+    </div>
+
+    <ui-prop class="row layout horizontal center-justified" name="Game ID:" tooltip="Nhập vào game id muốn thay đổi ngôn ngữ hoặc thư mục game muốn thay đổi ngôn ngữ">
+        <ui-input placeholder="1900" class="wd-300" id="gameID"></ui-input>
+    </ui-prop>
+
+    <ui-prop class="row layout horizontal center-justified" name="Language:" tooltip="Chọn ngôn ngữ muốn export">
+        <ui-select id="selectScene" class="wd-300" @change="onSelectLanguage">
+            <template v-for="item in languages">
+                <option v-value="item.value" class="wd-300">{{ item.text }}</option>
+            </template>
+        </ui-select>
+    </ui-prop>
+
+    <ui-prop class="row layout horizontal center-justified" name="Relaunch:" tooltip="Cocos creator sẽ tự khởi động lại sau khi update xong">
+        <ui-checkbox tabindex="-1" v-value="isRelaunch" class="wd-300"></ui-checkbox>
+    </ui-prop>
+
+    <div class="layout horizontal center-justified">
+        <h3>{{ log }}</h3>
+    </div>
+
+    <div class="row layout horizontal center-justified">
+        <ui-button id="btnClone" class="blue " @confirm="onClickRun">Run</ui-button>
+        <ui-button id="btnDebug" class="red" @confirm="onClickDebug">Debug</ui-button>
+        <ui-button id="btnReset" class="yellow" @confirm="onClickReset">Reset Multi Language</ui-button>
+    </div>
+</div>

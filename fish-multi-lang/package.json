@@ -1,0 +1,22 @@
+{
+  "name": "fish-multil-lang",
+  "version": "0.0.1",
+  "description": "Fish Update Multi Language",
+  "author": "Fish Team",
+  "scene-script": "libs/scene-utils.js",
+  "main": "main.js",
+  "main-menu": {
+    "Multi Lang/Multi Language Fish": {
+      "message": "fish-multil-lang:run"
+    }
+  },
+  "panel.run": {
+    "main": "run-update-panel/PanelExportLanguage.js",
+    "type": "dockable",
+    "title": "Chọn Scene Để Update Multi Language",
+    "width": 800,
+    "min-width": 800,
+    "min-height": 500,
+    "height": 500
+  }
+}

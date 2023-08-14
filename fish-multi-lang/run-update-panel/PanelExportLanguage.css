@@ -1,0 +1,43 @@
+
+:host ui-prop {
+    contain: none !important;
+}
+
+h3 { color: #f90; }
+
+.container {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    background-color: #6a6a6a;
+    align-items: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.row {
+    padding-bottom: 10px;
+    padding-top: 10px;
+    width: auto;
+}
+
+.wd-300 {
+    width: 300px;
+}
+
+.wd-100 {
+    width: 100px;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+input[type=text] {
+    height: 30px;
+}
+
+#run {
+    width: 150px;
+}
